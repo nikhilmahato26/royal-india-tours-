@@ -33,7 +33,7 @@ export default function Footer() {
 
       {/* WhatsApp CTA banner */}
       <div className="container-luxe relative">
-        <div className="mt-[-3rem] flex flex-col items-center justify-between gap-6 rounded-3xl bg-gold-gradient px-8 py-10 text-navy shadow-gold sm:flex-row sm:px-12">
+        <div className="mt-[3rem] z-20 flex flex-col items-center justify-between gap-6 rounded-3xl bg-gold-gradient px-8 py-10 text-navy shadow-gold sm:flex-row sm:px-12">
           <div>
             <h3 className="font-serif text-2xl font-semibold sm:text-3xl">
               Ready to plan your royal escape?

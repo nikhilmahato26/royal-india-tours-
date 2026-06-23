@@ -24,7 +24,7 @@ export default function Navbar() {
         }`}
       >
         <nav className="container-luxe flex items-center justify-between">
-          <Logo light={!scrolled} />
+          <Logo light={!scrolled} hasBg={true} />
 
           <ul className="hidden items-center gap-9 lg:flex">
             {navLinks.map((link) => (

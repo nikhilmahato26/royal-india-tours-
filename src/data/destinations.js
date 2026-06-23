@@ -21,7 +21,7 @@ export const domesticDestinations = [
   {
     name: 'Kashmir',
     description: 'Paradise on earth — shikaras, snow peaks and saffron valleys.',
-    image: img('photo-1566837497312-7be4a47b2c20'),
+    image: 'https://www.anubhavvacations.in/blog/wp-content/uploads/2025/01/kashmir-featured.webp',
   },
   {
     name: 'Goa',

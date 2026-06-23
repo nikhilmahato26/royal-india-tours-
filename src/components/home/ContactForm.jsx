@@ -46,7 +46,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="relative bg-beige py-24 sm:py-28">
+    <section id="contact" className="relative bg-beige py-24 sm:py-28 z-10">
       <div className="bg-grain absolute inset-0 opacity-40" />
       <div className="container-luxe relative">
         <SectionHeading
