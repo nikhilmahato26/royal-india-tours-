@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ivory text-navy font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-gold/30 text-navy;
+  }
+}
+
+@layer components {
+  .container-luxe {
+    @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-medium uppercase tracking-luxe text-gold;
+  }
+
+  .heading-serif {
+    @apply font-serif font-semibold leading-[1.05] text-navy;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold-gradient px-8 py-4 text-sm font-medium uppercase tracking-wider text-navy shadow-gold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_15px_50px_-10px_rgba(212,175,55,0.6)];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/40 px-8 py-4 text-sm font-medium uppercase tracking-wider text-white backdrop-blur-md transition-all duration-300 hover:border-gold hover:text-gold;
+  }
+
+  .btn-outline-navy {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-navy/20 px-8 py-4 text-sm font-medium uppercase tracking-wider text-navy transition-all duration-300 hover:border-gold hover:bg-gold hover:text-navy;
+  }
+
+  .glass {
+    @apply border border-white/20 bg-white/10 backdrop-blur-xl;
+  }
+
+  .glass-dark {
+    @apply border border-white/10 bg-navy/40 backdrop-blur-xl;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-gold-gradient bg-clip-text text-transparent;
+  }
+
+  .bg-grain {
+    background-image: radial-gradient(rgba(212, 175, 55, 0.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #071426;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 999px;
+}
+
+/* Swiper overrides */
+.swiper-pagination-bullet {
+  background: #D4AF37 !important;
+  opacity: 0.4 !important;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  width: 26px !important;
+  border-radius: 6px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #D4AF37 !important;
+}
